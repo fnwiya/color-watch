@@ -7,7 +7,7 @@ const Home = () => {
   const s = timer.getSeconds();
   const bg_1 = h === 0 ? 0 : Math.round(255 / h);
   const bg_2 = m === 0 ? 0 : Math.round(255 / m);
-  const bg_3 = h === 0 ? 0 : Math.round(255 / s);
+  const bg_3 = s === 0 ? 0 : Math.round(255 / s);
   const colors = [bg_1, bg_2, bg_3];
   const bg_r = colors[Math.floor(Math.random() * colors.length)];
   const bg_g = colors[Math.floor(Math.random() * colors.length)];
